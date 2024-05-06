@@ -1,19 +1,14 @@
-## Quickstart
+# AuthIT
 
-### This script assumes you have already configured Access Keys/AWS CLI and have the correct libraries installed.
+This project is a comprehensive and highly specialized system for managing, maintaining & distributing complex multi-stack architecture within AWS Cloud used for managing and orchestrating Cognito, Amplify, and many other services.    
 
-chmod +x aws_setup.sh
+This script assumes you have already configured Access Keys/AWS CLI.
 
-./aws_setup.sh
-
-### Rebuilding the project (no automatic code-cleanup)
-
-rm -rf idsystems* ; ./aws_setup.sh
-
-*Where idsystems** *etc. are the old project directories*
+## Building the project
+`chmod +x aws_setup.sh`
+`./aws_setup.sh`
 
 ## Create DNSSEC policy (no chain of trust)
-
 in *create_dnssec_policy_json.sh* update the following policy fields.
 These will likely be the same for your particular user.
 
