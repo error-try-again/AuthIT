@@ -2,14 +2,12 @@
 
 This project is a comprehensive and highly specialized system for managing, maintaining & distributing complex multi-stack architecture within AWS Cloud used for managing and orchestrating Cognito, Amplify, and many other services.    
 
-This script assumes you have already configured Access Keys/AWS CLI.
+*This script assumes you have already configured Access Keys/AWS CLI.*
 
 ## Building the project
-`chmod +x aws_setup.sh`
-`./aws_setup.sh`
 
-## Create DNSSEC policy (no chain of trust)
-in *create_dnssec_policy_json.sh* update the following policy fields.
+### Step 1. 
+Create a DNSSEC policy by modifying create_dnssec_policy_json.sh & updating the following policy fields.
 These will likely be the same for your particular user.
 
 principal_arn="arn:aws:iam::YOUR_PRINCIPAL_ID:root"
@@ -17,6 +15,11 @@ source_account="YOUR_SRC_ACCOUNT_NUMBER"
 
 principal_arn="arn:aws:iam::222222222222:root"
 source_account="222222222222"
+
+### Step 2. 
+`chmod +x aws_setup.sh`
+`./aws_setup.sh`
+
 
 ### *Reference Links*
 
